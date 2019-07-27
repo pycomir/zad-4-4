@@ -4,6 +4,11 @@ body {
   font-size: 16px;
 }
 
+.container {
+  width: 1400px;
+  padding: 10px;
+}
+
 /*nav*/
 .navigation {
   position: fixed;
@@ -12,6 +17,7 @@ body {
 
 .navigation .logo {
   display: inline-block;
+  margin-left: 249px;
   /* Style for "Golden" */
   width: 79px;
   height: 28px;
@@ -27,9 +33,10 @@ body {
 }
 
 .navigation .navbar {
+  transform: translate(0px, -70%);
   display: inline-block;
   margin-right: 0;
-  margin-left: 49%;
+  margin-left: 51%;
 }
 
 .navigation .navbar ul {
@@ -45,5 +52,73 @@ body {
 
 .navigation .navbar ul li a {
   text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+/*header*/
+.splash {
+  background-image: url(/images/Background_Image.jpg);
+  background-size: cover;
+}
+
+.splash .container {
+  position: relative;
+  text-align: center;
+  height: 729px;
+}
+
+.splash .container .splash-content {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-25%, -25%);
+}
+
+.splash .container .splash-content p {
+  color: #fff;
+  font-family: "Droid Serif";
+  font-size: 40px;
+  font-style: italic;
+  /* Text style for "W, elcome" */
+  letter-spacing: -1px;
+}
+
+.splash .container .splash-content h1 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
+}
+
+.splash .btn {
+  display: inline-block;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  display: inline-block;
+  min-width: 160px;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.splash .btn span {
+  display: inline-block;
+  padding-top: 10%;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px black;
 }
 /*# sourceMappingURL=style.css.map */
