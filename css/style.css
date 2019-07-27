@@ -1,8 +1,49 @@
-h1 {
-  color: red;
+/*global*/
+body {
+  margin: 0;
+  font-size: 16px;
 }
 
-p {
-  color: green;
+/*nav*/
+.navigation {
+  position: fixed;
+  background-color: transparent;
+}
+
+.navigation .logo {
+  display: inline-block;
+  /* Style for "Golden" */
+  width: 79px;
+  height: 28px;
+  color: #fed136;
+  color: #ffffff;
+  font-family: "Wisdom - Script";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 41px;
+  /* Text style for "G, olden" */
+  color: #fed136;
+  letter-spacing: 1.3px;
+}
+
+.navigation .navbar {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 49%;
+}
+
+.navigation .navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation .navbar ul li {
+  display: inline-block;
+  margin-right: 36px;
+}
+
+.navigation .navbar ul li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
