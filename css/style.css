@@ -1,124 +1,53 @@
 /*global*/
 body {
   margin: 0;
+  text-align: center;
+  background-color: #fff;
+  color: #3d3d3d;
   font-size: 16px;
+  line-height: 1.7;
 }
 
 .container {
-  width: 1400px;
-  padding: 10px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/*nav*/
-.navigation {
-  position: fixed;
-  background-color: transparent;
+/*navbar*/
+.navigation .wrappler {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
-.navigation .logo {
-  display: inline-block;
-  margin-left: 249px;
-  /* Style for "Golden" */
-  width: 79px;
-  height: 28px;
-  color: #fed136;
-  color: #ffffff;
-  font-family: "Wisdom - Script";
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 41px;
-  /* Text style for "G, olden" */
-  color: #fed136;
-  letter-spacing: 1.3px;
+.navigation .wrappler .logo {
+  -ms-flex: 2;
+      flex: 2;
 }
 
-.navigation .navbar {
-  transform: translate(0px, -70%);
-  display: inline-block;
-  margin-right: 0;
-  margin-left: 51%;
-}
-
-.navigation .navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.navigation .navbar ul li {
-  display: inline-block;
-  margin-right: 36px;
-}
-
-.navigation .navbar ul li a {
-  text-decoration: none;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 41px;
-  text-transform: uppercase;
-}
-
-/*header*/
-.splash {
-  background-image: url(/images/Background_Image.jpg);
-  background-size: cover;
-}
-
-.splash .container {
+.navigation .wrappler .navbar {
+  -ms-flex: 5;
+      flex: 5;
   position: relative;
-  text-align: center;
-  height: 729px;
 }
 
-.splash .container .splash-content {
+.navigation .wrappler .navbar ul {
+  margin: 0;
+  padding: 10px;
   position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-25%, -25%);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
-.splash .container .splash-content p {
-  color: #fff;
-  font-family: "Droid Serif";
-  font-size: 40px;
-  font-style: italic;
-  /* Text style for "W, elcome" */
-  letter-spacing: -1px;
-}
-
-.splash .container .splash-content h1 {
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 60px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -1.88px;
-}
-
-.splash .btn {
+.navigation .wrappler .navbar ul li {
   display: inline-block;
-  width: 240px;
-  height: 65px;
-  background-color: #fed136;
-  display: inline-block;
-  min-width: 160px;
-  padding: 16px;
-  border-radius: 5px;
-  font-size: 16px;
-  text-align: center;
+  margin-right: 40px;
+}
+
+.navigation .wrappler .navbar ul li a {
   text-decoration: none;
-  cursor: pointer;
-}
-
-.splash .btn span {
-  display: inline-block;
-  padding-top: 10%;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px black;
 }
 /*# sourceMappingURL=style.css.map */
