@@ -14,22 +14,22 @@ body {
   margin: 0;
 }
 
+.wrappler {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 /*navbar*/
 .navigation {
   width: 100%;
   position: fixed;
   background-color: transparent;
-  z-index: 2;
+  z-index: 3;
 }
 
-.navigation .wrappler {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.navigation .wrappler .logo {
+.navigation .logo {
   -ms-flex: 2;
       flex: 2;
   width: 79px;
@@ -38,22 +38,21 @@ body {
   font-size: 26px;
   font-weight: 400;
   line-height: 41px;
-  /* Text style for "G, olden" */
   letter-spacing: 1.3px;
 }
 
-.navigation .wrappler .logo h1 {
+.navigation .logo h1 {
   margin-left: 150px;
 }
 
-.navigation .wrappler .navbar {
+.navigation .navbar {
   -ms-flex: 5;
       flex: 5;
   position: relative;
 }
 
-.navigation .wrappler .navbar ul {
-  margin: 0;
+.navigation .navbar ul {
+  margin: 0 0 0 150px;
   padding: 10px;
   position: absolute;
   transform: translateY(-50%);
@@ -61,12 +60,12 @@ body {
   width: 100%;
 }
 
-.navigation .wrappler .navbar ul li {
+.navigation .navbar ul li {
   display: inline-block;
   margin-right: 40px;
 }
 
-.navigation .wrappler .navbar ul li a {
+.navigation .navbar ul li a {
   text-decoration: none;
   width: 71px;
   height: 10px;
@@ -134,5 +133,55 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+/*services*/
+.services .title {
+  margin-top: 80px;
+}
+
+.services .title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.services .title p {
+  margin-top: 0;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 18px;
+  font-style: italic;
+}
+
+.services .content {
+  margin-top: 80px;
+}
+
+.services .content .box {
+  width: 274px;
+}
+
+.services .content .box .icon {
+  width: 67px;
+  height: 67px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.services .content .box .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
