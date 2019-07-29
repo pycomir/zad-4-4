@@ -24,14 +24,16 @@ body {
 /*navbar*/
 .navigation {
   width: 100%;
-  position: fixed;
+  height: 0;
   background-color: transparent;
   z-index: 3;
 }
 
 .navigation .logo {
-  -ms-flex: 2;
-      flex: 2;
+  height: 129px;
+  position: relative;
+  -ms-flex: 1;
+      flex: 1;
   width: 79px;
   color: #fed136;
   font-family: "Wisdom - Script";
@@ -42,22 +44,28 @@ body {
 }
 
 .navigation .logo h1 {
-  margin-left: 150px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 0;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navigation .navbar {
-  -ms-flex: 5;
-      flex: 5;
+  -ms-flex: 1;
+      flex: 1;
   position: relative;
+  height: 129px;
 }
 
 .navigation .navbar ul {
-  margin: 0 0 0 150px;
+  margin: 0;
   padding: 10px;
   position: absolute;
+  z-index: 2;
   transform: translateY(-50%);
   top: 50%;
-  width: 100%;
 }
 
 .navigation .navbar ul li {
@@ -81,7 +89,7 @@ body {
 .splash {
   background-image: url(/images/background.jpg);
   background-size: cover;
-  height: 730px;
+  height: 750px;
 }
 
 .splash .container {
@@ -107,6 +115,7 @@ body {
 }
 
 .splash .container .splash-content p {
+  margin-bottom: 0;
   color: #ffffff;
   font-family: "Droid Serif";
   font-size: 40px;
@@ -115,6 +124,7 @@ body {
 }
 
 .splash .container .splash-content h1 {
+  margin: 0;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 60px;
@@ -124,6 +134,7 @@ body {
 }
 
 .splash .container .splash-content .btn {
+  margin-top: 26px;
   display: inline-block;
   width: 240px;
   font-size: 18px;
@@ -188,7 +199,7 @@ body {
 /*portfolio*/
 .portfolio {
   background-color: #f7f7f7;
-  padding-top: 80px;
+  padding: 80px 0;
   margin-top: 80px;
 }
 
@@ -235,5 +246,44 @@ body {
   font-family: "Droid Serif";
   font-size: 14px;
   font-style: italic;
+}
+
+/*footer*/
+footer {
+  position: relative;
+  height: 121px;
+  text-align: center;
+}
+
+footer p {
+  position: absolute;
+  left: 210px;
+  top: 50%;
+  transform: translateY(-75%);
+  display: inline-block;
+}
+
+footer ul {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -75%);
+  padding: 0;
+}
+
+footer ul li {
+  background-color: #222222;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+footer ul li i {
+  font-size: 25px;
+  color: #ffffff;
+  transform: translateY(30%);
 }
 /*# sourceMappingURL=style.css.map */
